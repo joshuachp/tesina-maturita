@@ -16,10 +16,8 @@
                     </mat-card-title>
                 </mat-card-header>
                 <mat-card-content class="dashboard-card-content" fxFlex>
-                    <div>
-                        <p>
-                            {{card.content}}
-                        </p>
+                    <div fxFlexLayout='row'>
+                        <img mat-card-image [src]="card.image" fxFill>
                     </div>
                 </mat-card-content>
                 <mat-card-actions>
