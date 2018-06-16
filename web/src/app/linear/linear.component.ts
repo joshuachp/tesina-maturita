@@ -22,7 +22,7 @@ export class LinearComponent implements OnInit {
         this.linearModel = tf.sequential();
         this.linearModel.add(tf.layers.dense({ units: 1, inputShape: [1] }));
 
-        this.linearModel.compile({ loss: 'meanSquareError', optimizer: 'sgd' })
+        this.linearModel.compile({ loss: 'meanSquaredError', optimizer: 'sgd' })
 
         const xs = tf.tensor1d([3.2, 4.4, 5.5]);
         const ys = tf.tensor1d([1.6, 2.7, 3.5]);
