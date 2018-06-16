@@ -15,6 +15,7 @@ export class LinearComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        this.trainNewModel();
     }
 
     async trainNewModel() {
@@ -29,12 +30,12 @@ export class LinearComponent implements OnInit {
         // Train
         await this.linearModel.fit(xs, ys)
 
-        console.log('model trained!')
+        console.log('model trained!');
     }
 
     predict(val: number) {
         const output = this.linearModel.predict(tf.tensor2d([val], [1, 1])) as any;
-        this.prediction = Array.from(output.dataSync())[0]
+        this.prediction = Array.from(output.dataSync())[0];
     }
 
 }
