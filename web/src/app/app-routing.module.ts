@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
 import { LinearComponent } from './linear/linear.component'
+import { MnistComponent } from './mnist/mnist.component'
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
@@ -15,6 +16,11 @@ const routes: Routes = [
     {
         path: 'linear',
         component: LinearComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'mnist',
+        component: MnistComponent,
         pathMatch: 'full'
     },
     {

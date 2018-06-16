@@ -10,13 +10,15 @@ import { IndexComponent } from './index/index.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LinearComponent } from './linear/linear.component';
+import { MnistComponent } from './mnist/mnist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     NotFoundComponent,
-    LinearComponent
+    LinearComponent,
+    MnistComponent
   ],
   imports: [
     BrowserModule,
