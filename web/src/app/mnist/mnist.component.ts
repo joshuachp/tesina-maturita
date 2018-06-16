@@ -31,7 +31,7 @@ export class MnistComponent implements OnInit {
 
             // Convert the canvas pixels to
             let img = tf.fromPixels(imageData, 1);
-            img = img.reshape([1, 28, 28, 1]);
+            //img = img.reshape([1, 28, 28, 1]);
             img = tf.cast(img, 'float32');
 
             // Make and format the predications

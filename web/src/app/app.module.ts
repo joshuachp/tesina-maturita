@@ -9,7 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { IndexComponent } from './index/index.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatChipsModule, MatInputModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LinearComponent } from './linear/linear.component';
 import { MnistComponent } from './mnist/mnist.component';
@@ -37,6 +37,8 @@ import { ChartComponent } from './chart/chart.component';
         MatIconModule,
         MatButtonModule,
         ChartsModule,
+        MatChipsModule,
+        MatInputModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

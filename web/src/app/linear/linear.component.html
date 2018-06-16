@@ -1,3 +1,10 @@
-TensorFlow says {{ prediction }}
-
-<input type="number" (change)="predict($event.target.value)">
+<div class="container" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card>
+        <mat-form-field class="content" fxLayout="column" fxLayoutAlign="start start">
+            <div>
+                <h3 class="mat-h3">Prediction : {{ prediction }}</h3>
+            </div>
+            <input matInput type="number" (change)="predict($event.target.value)" />
+        </mat-form-field>
+    </mat-card>
+</div>
