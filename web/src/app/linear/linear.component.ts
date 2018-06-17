@@ -10,7 +10,7 @@ import * as tf from '@tensorflow/tfjs';
 export class LinearComponent implements OnInit {
 
     linearModel: tf.Sequential;
-    prediction: any;
+    prediction: any = 'Nan';
 
     constructor() { }
 
@@ -30,7 +30,7 @@ export class LinearComponent implements OnInit {
         // Train
         await this.linearModel.fit(xs, ys)
 
-        console.log('model trained!');
+        console.log('Model trained.');
     }
 
     predict(val: number) {
