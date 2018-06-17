@@ -11,6 +11,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { IndexComponent } from './index/index.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatChipsModule, MatInputModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MatDividerModule } from '@angular/material/divider';
 import { LinearComponent } from './linear/linear.component';
 import { MnistComponent } from './mnist/mnist.component';
 import { DrawableDirective } from './drawable.directive';
@@ -39,6 +40,7 @@ import { ChartComponent } from './chart/chart.component';
         ChartsModule,
         MatChipsModule,
         MatInputModule,
+        MatDividerModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
