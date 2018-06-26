@@ -1,17 +1,14 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm">
-      <h3>Draw Here</h3>
+<div class="container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10vh">
+    <div class="col">
+        <h3 class="mat-h3">Draw Here</h3>
         <div class="wrapper">
             <canvas drawable (newImage)="predict($event)"></canvas><br>
         </div>
-
-        <button class="btn btn-sm btn-warning" (click)="canvas.clear()">Erase</button>
-
+        <br/>
+        <button mat-raised-button color="warn" (click)="canvas.clear()">CLEAR</button>
     </div>
-    <div class="col-sm">
-        <h3>TensorFlow Prediction</h3>
+    <div class="col" fxFlex="50">
+        <h3 class="mat-h3">TensorFlow Prediction</h3>
         <chart [data]="predictions"></chart>
     </div>
-  </div>
 </div>

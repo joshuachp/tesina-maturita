@@ -1,3 +1,7 @@
+.container {
+    height: 100%;
+}
+
 .wrapper {
     display: inline-flex;
     justify-content: flex-end;
@@ -13,6 +17,6 @@ canvas {
     cursor: crosshair;
 }
 
-.row {
-    margin: 10vh 5vw;
+button {
+    margin-top: 14px;
 }
