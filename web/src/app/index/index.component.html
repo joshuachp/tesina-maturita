@@ -17,8 +17,8 @@
                 <div *ngIf="card.image; then showImage; else showContent">
                 </div>
                 <ng-template #showImage>
-                    <div mat-card-image class="image-container" fxFlex fxLayout="row" >
-                         <img class="content-image" [src]="card.image" fxFill/>
+                    <div mat-card-image class="image-container" fxFlex fxLayout="row">
+                        <img class="content-image" [src]="card.image" fxFlex/>
                     </div>
                 </ng-template>
                 <ng-template #showContent>
