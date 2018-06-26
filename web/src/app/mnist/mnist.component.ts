@@ -31,11 +31,11 @@ export class MnistComponent implements OnInit {
 
             // Convert the canvas pixels to
             let img = tf.fromPixels(imageData, 1);
-            //img = img.reshape([1, 28, 28, 1]);
-            img = tf.cast(img, 'float32');
+            let image = img.reshape([1, 28, 28, 1])
+            image = tf.cast(image, 'float32');
 
             // Make and format the predications
-            const output = this.model.predict(img) as any;
+            const output = this.model.predict(image) as any;
 
             // Save predictions on the component
             this.predictions = Array.from(output.dataSync());
